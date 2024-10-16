@@ -3,8 +3,12 @@
 ![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)
 
-This project is a simple flashcard generator that reads a CSV file containing questions and answers, creates flashcards,
-and exports them as an Anki deck (`.apkg` file). It uses the [genanki](https://github.com/kerrickstaley/genanki) library to create the deck and notes for studying.
+This project is a simple flashcard generator that reads a CSV file containing questions and answers, creates flashcards, and exports them as an Anki deck (`.apkg` file). It uses the `genanki` library to create the deck and notes for studying.
+
+The generated flashcards can be used with the [Anki app](https://apps.ankiweb.net/), which is a program designed to make 
+remembering things easy. Anki is much more efficient than traditional study methods, allowing you to either greatly
+decrease your time spent studying or significantly increase the amount you learn.
+It benefits anyone who needs to remember information in their daily life.
 
 ### Files:
 - **`main.py`**: The entry point of the application. It reads the CSV data and triggers the flashcard creation process.
