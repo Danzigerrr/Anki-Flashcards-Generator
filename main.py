@@ -1,4 +1,3 @@
-import genanki
 from csv_reader import read_csv_file
 from flashcards_creator import create_flashcards
 
