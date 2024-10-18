@@ -57,9 +57,7 @@ def write_deck_to_file(deck, filename):
     genanki.Package(deck).write_to_file(filename + '.apkg')
 
 
-def create_flashcards(questions_and_answers):
-    deck_name = "English to German words"
-
+def create_flashcards(questions_and_answers, deck_name):
     notes = create_notes(questions_and_answers)
     deck = create_deck_with_notes(notes, deck_name)
     write_deck_to_file(deck, deck_name)
