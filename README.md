@@ -13,7 +13,7 @@ decrease your time spent studying or significantly increase the amount you learn
 It benefits anyone who needs to remember information in their daily life.
 
 ## Table of Contents
-   * [Files](#files-)
+   * [Files](#files)
    * [Requirements](#requirements)
    * [Setting Up a Virtual Environment](#setting-up-a-virtual-environment)
    * [Usage](#usage)
@@ -70,14 +70,25 @@ This project requires Python 3.8 or higher. To manage dependencies, it's recomme
    Danke,Thank you
    ```
 
-2. **Run the Application**:
+2. **In `main.py` define `csv_filename`, `csv_delimiter`, and the name of the deck to be created (`deck_name`)**:
+   ```python
+    csv_filename = 'data.csv'
+    csv_delimiter = ','
+    questions_and_answers = read_csv_file(csv_filename, csv_delimiter)
+   
+    deck_name = "English to German words"
+    create_flashcards(questions_and_answers, deck_name)
+   ```
+
+3. **Run the Application**:
    Execute the `main.py` script to generate the Anki flashcards.
 
    ```bash
    python main.py
    ```
 
-3. **Output**: The generated Anki deck (`English to German words.apkg`) will be saved in the project directory. You can import this file into your Anki app for study.
+4. **Output**: The generated Anki deck with the defined deck name will be saved in the project directory. 
+You can import this file into your Anki app for study.
 
 ## How it Works
 
