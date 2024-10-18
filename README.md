@@ -13,14 +13,14 @@ decrease your time spent studying or significantly increase the amount you learn
 It benefits anyone who needs to remember information in their daily life.
 
 ## Table of Contents
-   * [Files](#files)
+   * [Project Structure](#project-structure)
    * [Requirements](#requirements)
    * [Setting Up a Virtual Environment](#setting-up-a-virtual-environment)
    * [Usage](#usage)
    * [How it Works](#how-it-works)
    * [License](#license)
 
-### Files:
+### Project Structure:
 - **`main.py`**: The entry point of the application. It reads the CSV data and triggers the flashcard creation process.
 - **`csv_reader.py`**: Contains the `read_csv_file` function, which reads the CSV file and returns a list of dictionaries with questions and answers.
 - **`flashcards_creator.py`**: Contains functions to generate the Anki deck and write it to an `.apkg` file.
