@@ -12,7 +12,15 @@ remembering things easy. Anki is much more efficient than traditional study meth
 decrease your time spent studying or significantly increase the amount you learn.
 It benefits anyone who needs to remember information in their daily life.
 
-### Files:
+## Table of Contents
+   * [Project Structure](#project-structure)
+   * [Requirements](#requirements)
+   * [Setting Up a Virtual Environment](#setting-up-a-virtual-environment)
+   * [Usage](#usage)
+   * [How it Works](#how-it-works)
+   * [License](#license)
+
+### Project Structure:
 - **`main.py`**: The entry point of the application. It reads the CSV data and triggers the flashcard creation process.
 - **`csv_reader.py`**: Contains the `read_csv_file` function, which reads the CSV file and returns a list of dictionaries with questions and answers.
 - **`flashcards_creator.py`**: Contains functions to generate the Anki deck and write it to an `.apkg` file.
@@ -62,14 +70,25 @@ This project requires Python 3.8 or higher. To manage dependencies, it's recomme
    Danke,Thank you
    ```
 
-2. **Run the Application**:
+2. **In `main.py` define `csv_filename`, `csv_delimiter`, and the name of the deck to be created (`deck_name`)**:
+   ```python
+    csv_filename = 'data.csv'
+    csv_delimiter = ','
+    questions_and_answers = read_csv_file(csv_filename, csv_delimiter)
+   
+    deck_name = "English to German words"
+    create_flashcards(questions_and_answers, deck_name)
+   ```
+
+3. **Run the Application**:
    Execute the `main.py` script to generate the Anki flashcards.
 
    ```bash
    python main.py
    ```
 
-3. **Output**: The generated Anki deck (`English to German words.apkg`) will be saved in the project directory. You can import this file into your Anki app for study.
+4. **Output**: The generated Anki deck with the defined deck name will be saved in the project directory. 
+You can import this file into your Anki app for study.
 
 ## How it Works
 
